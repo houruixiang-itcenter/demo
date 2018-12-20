@@ -14,6 +14,10 @@
 这是多行注释，使用双引号。
 """
 
+"""
+python 格式  输入输出
+"""
+
 
 class hallo:
     def __init__(self):
@@ -31,16 +35,18 @@ class hallo:
     print "False"
     x = 'a'
     y = 'b'
+    # python默认输出是换行的, 如果不换行需要在末尾加”, ”
+    print x
+    print y
+    print x, y
+    print x,
+    print y,
     print "------------------------"
     if x.__eq__(y):
         print "==="
     else:
         print "!="
     print "LALO"
-    # py 默认换行,如果不换行则结尾+","
-    print x
-    print y
-    print x, y
     # 像if、while 、def和class这样的复合语句，首行以关键字开始，以冒号(: )
     #     结束，该行之后的一行或多行代码构成代码组。
     #
@@ -54,3 +60,9 @@ class hallo:
     else:
         print "life is short i use python"
     print "你好你好"
+
+    # -*- coding: UTF-8 -*-
+    print "你好，世界";
+    print('100 + 200 =', 100 + 200);
+    name = input()
+    print('hello,', name)
