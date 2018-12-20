@@ -62,7 +62,66 @@ class hallo:
     print "你好你好"
 
     # -*- coding: UTF-8 -*-
-    print "你好，世界";
-    print('100 + 200 =', 100 + 200);
-    name = input()
-    print('hello,', name)
+    # print "你好，世界";
+    # print('100 + 200 =', 100 + 200);
+    # name = input()
+    # print('hello,', name)
+
+    # py中一些输出的格式
+    print('i love u')
+    print("'i love u'")
+    print("'i \"love u'")
+    # r''表示转义符失效
+    print(r"'i \"love u'")
+    print(r'''hello,\n
+    world''')
+    # '''...'''代表多行展示
+    print('''
+    line1
+    line2
+    line3''')
+
+
+    # 布尔值
+    # 在py中布尔值 用首字母大写标识 True  False
+    print True
+    print False
+    print 2 > 3
+    print 1 == 1
+    print 'hallo' == 'hallo'
+
+    # 布尔值可以用and、or和not运算。
+    # and运算是与运算，只有所有都为True，and运算结果才是True：
+    print  True and True, True and False
+    print  True or True, True or False
+    print  not True, not False
+
+    # 空值
+    # 空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。
+    # 此外，Python还提供了列表、字典等多种数据类型，还允许创建自定义数据类型，我们后面会继续讲到。
+
+    # 变量
+    # 变量的概念基本上和初中代数的方程变量是一致的，只是在计算机程序中，变量不仅可以是数字，还可以是任意数据类型。
+    # 变量在程序中就是用一个变量名表示了，变量名必须是大小写英文、数字和_的组合，且不能用数字开头，比如：
+
+    a = 123
+    b = 0.111
+    c = 'haha'
+    print a
+    print b
+    print c
+    # print a + c
+
+    a = 'ABC'
+    b = a
+    a = 'XYZ'
+    print(b)
+
+    # python中也有常量 但是他不像java中final可以限定死 所以就格式上与众不同而已  通常位大写
+    PI = 3
+
+    # 这里来一个 小插曲 python的运算符
+    print 9 / 3
+    print 10 / 3
+    print 10 // 3
+    print 10 % 3
