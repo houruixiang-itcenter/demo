@@ -125,3 +125,13 @@ class hallo:
     print 10 / 3
     print 10 // 3
     print 10 % 3
+    l1 = r'''Hello,\'
+    Lisa!'''
+    l2 = '''Hello,\'
+    Lisa!'''
+    l3 = r'Hello, "Bart"'
+    l4 = 'Hello, "Bart"'
+    print l1
+    print l2
+    print l3
+    print l4
