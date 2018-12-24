@@ -1,52 +1,45 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-# 文件名：Demo.py
+# 文件名：test2.py
 
-'''
-这是多行注释，使用单引号。
-这是多行注释，使用单引号。
-这是多行注释，使用单引号。
-'''
+
+
 
 """
-这是多行注释，使用双引号。
-这是多行注释，使用双引号。
-这是多行注释，使用双引号。
+1.python 的基本数据类型
+2.python 格式  输入输出
 """
 
-"""
-python 格式  输入输出
-"""
-
-
-class hallo:
+from __future__ import print_function
+class test2:
     def __init__(self):
         pass
 
     if True:
-        print "Answer"
-        print "True"
+        print("Answer")
+        print("True")
         import sys;
         x = 'runoob';
         sys.stdout.write(x + '\n')
     else:
-        print "Answer"
+        print("Answer")
         # 没有严格缩进，在执行时会报错
-    print "False"
+    print("False")
     x = 'a'
     y = 'b'
     # python默认输出是换行的, 如果不换行需要在末尾加”, ”
-    print x
-    print y
-    print x, y
-    print x,
-    print y,
-    print "------------------------"
+    print(x)
+    print(y)
+    var = x, y
+    print(x, y)
+    print(x, end='')
+    print(y,)
+    print("------------------------")
     if x.__eq__(y):
-        print "==="
+        print("===")
     else:
-        print "!="
-    print "LALO"
+        print("!=")
+    print("LALO")
     # 像if、while 、def和class这样的复合语句，首行以关键字开始，以冒号(: )
     #     结束，该行之后的一行或多行代码构成代码组。
     #
@@ -54,12 +47,12 @@ class hallo:
     expression = True
     uint = False
     if expression:
-        print "expression"
+        print("expression")
     elif uint:
-        print "uint"
+        print("uint")
     else:
-        print "life is short i use python"
-    print "你好你好"
+        print("life is short i use python")
+    print("你好你好")
 
     # -*- coding: UTF-8 -*-
     # print "你好，世界";
@@ -84,17 +77,17 @@ class hallo:
 
     # 布尔值
     # 在py中布尔值 用首字母大写标识 True  False
-    print True
-    print False
-    print 2 > 3
-    print 1 == 1
-    print 'hallo' == 'hallo'
+    print(True)
+    print(False)
+    print(2 > 3)
+    print(1 == 1)
+    print('hallo' == 'hallo')
 
     # 布尔值可以用and、or和not运算。
     # and运算是与运算，只有所有都为True，and运算结果才是True：
-    print  True and True, True and False
-    print  True or True, True or False
-    print  not True, not False
+    print(True and True, True and False)
+    print(True or True, True or False)
+    print(not True, not False)
 
     # 空值
     # 空值是Python里一个特殊的值，用None表示。None不能理解为0，因为0是有意义的，而None是一个特殊的空值。
@@ -107,9 +100,9 @@ class hallo:
     a = 123
     b = 0.111
     c = 'haha'
-    print a
-    print b
-    print c
+    print(a)
+    print(b)
+    print(c)
     # print a + c
 
     a = 'ABC'
@@ -121,17 +114,17 @@ class hallo:
     PI = 3
 
     # 这里来一个 小插曲 python的运算符
-    print 9 / 3
-    print 10 / 3
-    print 10 // 3
-    print 10 % 3
+    print(9 / 3)
+    print(10 / 3)
+    print(10 // 3)
+    print(10 % 3)
     l1 = r'''Hello,\'
     Lisa!'''
     l2 = '''Hello,\'
     Lisa!'''
     l3 = r'Hello, "Bart"'
     l4 = 'Hello, "Bart"'
-    print l1
-    print l2
-    print l3
-    print l4
+    print(l1)
+    print(l2)
+    print(l3)
+    print(l4)
