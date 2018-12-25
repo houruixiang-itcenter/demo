@@ -28,6 +28,7 @@ class test3:
 
 1.1字符编码和反编码
 '''
+print('----------------------------字符串和编码 -----------------------------------------')
 print('包含中文的str')
 
 # 单个字符的编码，Python提供了ord()函数获取字符的整数表示，chr()函数把编码转换为对应的字符：
@@ -70,3 +71,59 @@ python另一种格式化方式 format
 '''
 a = 'Hello, {0}, 成绩提升了 {1:.1f}%,平均成绩{2:2d},'.format('小明', 17.125, 90)
 print(a)
+
+
+'''
+2.使用list和tuple :
+
+2.1 list
+'''
+print('----------------------------使用list -----------------------------------------')
+
+# 创建list 类比java中的ArrayList
+classList = ['ljp', 'gh', 'lf']
+l = len(classList)
+l0 = classList[0]
+l1 = classList[1]
+l2 = classList[2]
+print(l, l0, l1, l2)
+
+
+# 如果要取最后一个元素，除了计算索引位置外，还可以用-1做索引，直接获取最后一个元素：
+print(classList[-1], classList[-2], classList[-3])
+
+#  this is my first function
+def getItem(classList):
+	for item in classList:
+		if classList.index(item) == len(classList) - 1:
+			print(item)
+		else:
+			print(item, end='  ')
+
+
+# list具备如下 操作
+# 增加
+classList.append('hrx')
+getItem(classList)
+
+# 插入
+classList.insert(1, '哈哈')
+classList.insert(1, '嘿嘿')
+getItem(classList)
+
+# 删除
+classList.pop()
+classList.pop(0)
+getItem(classList)
+
+#  修改
+classList[0] = '李际鹏'
+
+
+#  list中元素类型 不确定
+list = [0, '哈哈', 'hallo', [1, 2]]
+getItem(list)
+
+
+print('----------------------------使用tuple -----------------------------------------')
+# 另一种有序列表叫元组：tuple。tuple和list非常类似，但是tuple一旦初始化就不能修改，比如同样是列出同学的名字：
